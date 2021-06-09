@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: "FontAwesome";
+    src: url("assets/font-awesome-4.7.0/fonts/FontAwesome.otf");
+}
+
+@font-face {
+    font-family: "Minions Pro";
+    src: url("assets/fonts/MinionPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "TT Regular";
+    src: url("assets/fonts/TypeType\ -\ TT\ Firs\ Neue\ Regular.otf");
+}
+
+@font-face {
+    font-family: "TT Light";
+    src: url("assets/fonts/TypeType\ -\ TT\ Firs\ Neue\ Light.otf");
+}
+
+body {
+    font-family: 'TT Regular';
+}
+
+header i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.main-title-wrap {
+    position: absolute;
+    top: 28%;
+    text-align: center;
+}
+
+.main-title-wrap .main-title {
+    color: #fff;
+    font-size: 12rem;
+}
+
+#carouselHome .carousel-inner {
+    max-height: 600px;
+}
+
+#carouselHome .carousel-inner .carousel-item {
+    max-height: 600px;
+}
+
+#carouselHome .carousel-inner .carousel-item .carousel-caption {
+    max-width: 460px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+#carouselHome .carousel-indicators [data-bs-target] {
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    margin: 0 10px;
+    background-color: #f68820;
+}
