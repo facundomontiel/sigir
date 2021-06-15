@@ -19,6 +19,24 @@
     src: url("assets/fonts/TypeType\ -\ TT\ Firs\ Neue\ Light.otf");
 }
 
+@font-face {
+    font-family: "TT DemiBold";
+    src: url("assets/fonts/TypeType\ -\ TT\ Firs\ Neue\ DemiBold.otf");
+}
+
+@font-face {
+    font-family: "TT Bold Italic";
+    src: url("assets/fonts/TypeType\ -\ TT\ Firs\ Neue\ Bold\ Italic.otf");
+}
+
+a {
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+a:hover {
+    color: #f68820;
+}
+
 body {
     font-family: 'TT Regular';
 }
@@ -39,17 +57,43 @@ header i {
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     font-size: 1.1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #f68820;
 }
 
 .main-title-wrap {
     position: absolute;
-    top: 28%;
+    top: 24%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
 }
 
 .main-title-wrap .main-title {
     color: #fff;
-    font-size: 12rem;
+    font-size: 14rem;
+    font-weight: 700;
+}
+
+.main-title-wrap .side-main-title {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.main-title-wrap .side-main-title a {
+    transform: rotate(90deg);
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-title-wrap .side-main-title a:hover {
+    color: #f68820;
 }
 
 #carouselHome .carousel-inner {
@@ -73,4 +117,111 @@ header i {
     height: 15px;
     margin: 0 10px;
     background-color: #f68820;
+}
+
+.homepage #carouselBasicExample .left-slider-news {
+    align-self: center;
+    transform: rotate(270deg);
+    font-size: 3.2rem;
+}
+
+.homepage #carouselBasicExample .right-slider-news {
+    align-self: center;
+    transform: rotate(90deg);
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.homepage #carouselBasicExample .carousel-item .card {
+    border: none;
+}
+
+.homepage .carousel-item .card-body {
+    padding: 1.2rem 0;
+    text-align: left;
+    font-size: .9rem;
+}
+
+.homepage .carousel-item .post-meta {
+    text-align: left;
+    font-family: 'TT Regular';
+    font-size: .7rem;
+    margin-bottom: 1.2rem;
+}
+
+.homepage .carousel-item .card .image-wrap {
+    max-height: 169px;
+}
+
+.homepage .carousel-item .card .image-wrap img {
+    max-height: inherit;
+    object-fit: cover;
+    object-position: top;
+    }
+
+.homepage .carousel-item .card-text {
+    margin-bottom: 0;
+}
+
+.homepage .carousel-item .card-body a {
+    color: #000;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+.homepage .carousel-item .card-body a:hover {
+    color: #f68820;
+} 
+
+#home-cta {
+    background: url(assets/img/home-cta.jpg);
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(65, 24, 24, 0.4);
+    background-blend-mode: color;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#home-cta .text-row {
+    font-family: 'TT Bold Italic';
+    font-size: 1.6rem;
+    margin-bottom: 80px;
+    max-width: 960px;
+    margin: auto;
+}
+
+#home-cta .links-row {
+    margin-top: 80px;
+}
+
+#home-cta .links-row .col-12 a {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    align-self: center;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#home-cta .links-row .col-12 a:hover {
+    color: #f68820;
+}
+
+#home-cta .curly-braces-wrap {
+    display: flex;
+    align-items: center;
+}
+
+#home-cta .links-row .curly-braces {
+    font-size: 5em;
+    font-weight: 700;
+    margin: 0 15px;
+}
+
+.footer {
+    min-height: 50px;
+    background-color:#f68820;
 }
